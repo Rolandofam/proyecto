@@ -1,19 +1,24 @@
 import java.util.Scanner;
 
 class Fibonacci {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduce el valor de n: ");
-        int n = scanner.nextInt();
+    public void normal(int nn)
+    {
         int a = 0, b = 1;
-        System.out.println("Los primeros " + n + " números de la serie de Fibonacci son:");
+        System.out.println("Los primeros " + nn + " números de la serie de Fibonacci son:");
         for (int i = 1; i <= nn; i++) {
             System.out.print(a + " ");
             int siguiente = a + b;
             a = b;
             b = siguiente;
-
         }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Introduce el valor de n: ");
+        int n = scanner.nextInt();
+        Fibonacci fibo=new Fibonacci();
+        fibo.normal(n);
         scanner.close();
     }
 }
