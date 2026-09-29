@@ -21,7 +21,6 @@ class Fibonacci {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Introduce el valor de n: ");
         int n = scanner.nextInt();
-        int a = 0, b = 1;
         Fibonacci fibo=new Fibonacci();
         fibo.serie(n);
         scanner.close();
